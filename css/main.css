@@ -1,19 +1,21 @@
 body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 50px
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 20px;
 }
-
 header {
     grid-column: 1 / 4;
-    font-size: 50px;
-    text-align: center;
+    font-size: 100px;
 }
-
 box1, box2, box3, box4, box5, box6, box7, box8, box9 {
-    text-justify: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 100px;
     color: black;
     background-color: rgb(233, 223, 223);;
+}
+reset {
+    backgroundcolor: black;
 }

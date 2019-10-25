@@ -1,24 +1,23 @@
 /*----- constants -----*/
-const winCOUNT = 3;
-const putMark = 1;
-const xoARRAY = ['X', 'O', 'X', 'O', 'X', 'O', 'X'];
-
-
+const winSCENARIOS = [];
+const gameBoard = [];
+const plyrINPUT = ['X', 'O', 'X', 'O', 'X', 'O', 'X'];
 
 /*----- app's state (variables) -----*/
-let = start;
-let = turn;
-let = win;
+let = start, turn, win;
 
 /*----- cached element references -----*/
 //resetButton
-//xoButton
-//messagePROMPTS
+//turns
+
 
 /*----- event listeners -----*/
-//win
-//xoButton
-//
+//boardClick
+
 
 /*----- functions -----*/
+//setupBoard
+//takingTurns
+//toWinLose
+
 
