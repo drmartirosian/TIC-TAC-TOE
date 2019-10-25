@@ -1,19 +1,29 @@
 /*----- constants -----*/
-const winSCENARIOS = [];
-const gameBoard = [];
-const plyrINPUT = ['X', 'O', 'X', 'O', 'X', 'O', 'X'];
+// const winSCENARIOS = [
+//     '123', '456', '789', '147', '256', '369', '159', '357'
+// ];
+// const gameBoard = [];
 
 /*----- app's state (variables) -----*/
-let = start, turn, win;
+// let = 
+
 
 /*----- cached element references -----*/
 //resetButton
-//turns
+const tileAll = document.querySelectorAll('.tiles');
+console.log(tileAll);
 
 /*----- event listeners -----*/
-//boardClick
+tileAll.forEach(element => {
+    element.addEventListener('click', tileClick);
+ 
+    
+});
 
 /*----- functions -----*/
 //setupBoard
 //takingTurns
 //toWinLose
+function tileClick(evt) {
+    console.log('TEST : ', evt.target);
+};

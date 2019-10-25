@@ -1,4 +1,4 @@
-body {
+body > div {
     display: grid;
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
@@ -16,6 +16,8 @@ box1, box2, box3, box4, box5, box6, box7, box8, box9 {
     color: black;
     background-color: rgb(233, 223, 223);;
 }
+
+
 reset {
     backgroundcolor: black;
 }
