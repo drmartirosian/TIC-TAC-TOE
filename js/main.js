@@ -10,14 +10,10 @@ let = start, turn, win;
 //resetButton
 //turns
 
-
 /*----- event listeners -----*/
 //boardClick
-
 
 /*----- functions -----*/
 //setupBoard
 //takingTurns
 //toWinLose
-
-
