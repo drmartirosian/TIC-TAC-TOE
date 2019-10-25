@@ -2,7 +2,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px
+    grid-gap: 50px
 }
 
 header {
@@ -16,5 +16,4 @@ box1, box2, box3, box4, box5, box6, box7, box8, box9 {
     font-size: 100px;
     color: black;
     background-color: rgb(233, 223, 223);;
-    
 }
