@@ -3,21 +3,20 @@ body > div {
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 100px 100px 100px;
     grid-gap: 20px;
+    width: 320px;
+    height: 320px;
+    margin: auto;
+    margin-top: 100px;
 }
 header {
-    grid-column: 1 / 4;
     font-size: 100px;
+    text-align: center;
 }
 box1, box2, box3, box4, box5, box6, box7, box8, box9 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 100px;
-    color: black;
-    background-color: rgb(233, 223, 223);;
-}
-
-
-reset {
-    backgroundcolor: black;
+    color: rgb(243, 234, 234);
+    background-color: rgb(22, 21, 21);;
 }
