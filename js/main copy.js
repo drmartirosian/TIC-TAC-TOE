@@ -6,7 +6,6 @@
 
 
 /*------------ constants --------------*/
-const content = document.getElementById('message');
 const winConditions = [ //possible win scenarios...
     ['1', '2', '3'],
     ['4', '5', '6'],
@@ -19,15 +18,21 @@ const winConditions = [ //possible win scenarios...
     ['1', '5', '9'],
     ['3', '5', '7'],
 ];
-
+const content = document.getElementById('message');
 
 /*----- app's state (variables) -------*/
 var turn = []; //number of turns in game...
 var playerO = []; //
 var playerX = []; //
+
+
+
+
+
 /*----- cached element references -----*/
 //TILE BUTTONS
 const tileAll = document.querySelectorAll('.tiles');
+
 /*------------ event listeners ---------*/
 //LISTENER FOR CLICK
 tileAll.forEach(element => {
@@ -41,6 +46,12 @@ tileAll.forEach(element => {
 
 
 /*------------ functions ----------------*/
+// function () {
+// alltiles.push(tilesIDs);
+// console.log(tilesIds)
+// };
+
+
 //TAKING TURNS
 function tileClick(event) { 
     turn.push(''); //+1 to turn array per click
@@ -65,10 +76,6 @@ function tileClick(event) {
 
 
     console.log(turn.length); //end
-};
-
-function DisableNextButton() {
-    document.getElementById().disabled = 'true';
 };
 
 console.log(tileIds);
