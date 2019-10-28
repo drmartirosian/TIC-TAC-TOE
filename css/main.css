@@ -10,10 +10,9 @@ header {
 
 .message {
     display: grid;
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
     color: black;
-     
 }
 
 button {

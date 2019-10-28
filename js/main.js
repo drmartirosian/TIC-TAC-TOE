@@ -6,18 +6,19 @@
 
 
 /*------------ constants --------------*/
-const content = document.getElementById('message');
-const winConditions = [ //possible win scenarios...
-    ['1', '2', '3'],
-    ['4', '5', '6'],
-    ['7', '8', '9'],
+const content = document.getElementById('message');//for message...
 
-    ['1', '4', '7'],
-    ['2', '5', '8'],
-    ['7', '8', '9'],
+const win = [                  //possible win scenarios...
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9],
 
-    ['1', '5', '9'],
-    ['3', '5', '7'],
+            [1, 4, 7],
+            [2, 5, 8],
+            [7, 8, 9],
+
+            [1, 5, 9],
+            [3, 5, 7],
 ];
 
 
@@ -25,9 +26,12 @@ const winConditions = [ //possible win scenarios...
 var turn = []; //number of turns in game...
 var playerO = []; //
 var playerX = []; //
+
+
 /*----- cached element references -----*/
 //TILE BUTTONS
 const tileAll = document.querySelectorAll('.tiles');
+
 /*------------ event listeners ---------*/
 //LISTENER FOR CLICK
 tileAll.forEach(element => {
@@ -41,34 +45,28 @@ tileAll.forEach(element => {
 
 
 /*------------ functions ----------------*/
-//TAKING TURNS
+//STATES OF GAMEPLAY...
 function tileClick(event) { 
     turn.push(''); //+1 to turn array per click
     let tileLabeler = event.target;
-    console.log(turn.length); //start
 
     if (turn.length % 2 !== 0 && turn.length <= 9) { //PLAYER1
-        message.textContent = "PLAYER1'S TURN!";
-        tileLabeler.innerHTML = "X";
-        playerX.push(titleLabeler.id);
-    }
-
-    if (turn.length % 2 === 0 && turn.length <= 9) { //PLAYER2
         message.textContent = "PLAYER2'S TURN!";
+        tileLabeler.innerHTML = "X";
+        playerX.push(tileLabeler.id);
+        playerX.sort();
+        console.log(playerX);
+
+    } if (turn.length % 2 === 0 && turn.length <= 9) { //PLAYER2
+        message.textContent = "PLAYER1'S TURN!";
         tileLabeler.innerHTML = "O";
-        playerO.push(titleLabeler.id);
-    } 
+        playerO.push(tileLabeler.id);
+        playerO.sort();
+        console.log(playerO);
 
-    if (turn.length >= 10) {
+    } if (turn.length >= 9) 
         message.textContent = "DRAW!";
-    }
-
-
-    console.log(turn.length); //end
+        // console.log(turn.length); 
 };
 
-function DisableNextButton() {
-    document.getElementById().disabled = 'true';
-};
-
-console.log(tileIds);
+console.log(JSON.stringify(win));
